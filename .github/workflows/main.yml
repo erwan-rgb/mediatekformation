@@ -14,7 +14,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server:  ftp-voyageenpoche.alwaysdata.net
-          server-dir: /home/voyageenpoche/www/mediatekformation/public/
+          server-dir: www/mediatekformation/public/
           username: voyageenpoche
           password: ${{ secrets.ftp_password }}
           protocol: ftps
