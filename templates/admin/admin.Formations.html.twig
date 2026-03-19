@@ -1,14 +1,19 @@
-{% extends "basefront.html.twig" %}
+{% extends "baseadmin.html.twig" %}
+
 {% block body %}
+    <p class="text-end">
+        <a href="{{ path('admin.formation.ajout') }}" class="btn btn-primary">
+            Ajout d'une formation
+        </a>
+    </p>
     <table class="table table-striped">
-        <caption>Liste des formations</caption>
         <thead>
-            <tr>
+           <tr>
                 <th class="text-left align-top" scope="col">
                     formation<br />
-                    <a href="{{ path('formations.sort', {champ:'title', ordre:'ASC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true"><</a>
-                    <a href="{{ path('formations.sort', {champ:'title', ordre:'DESC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">></a>
-                    <form class="form-inline mt-1" method="POST" action="{{ path('formations.findallcontain', {champ:'title'}) }}">
+                    <a href="{{ path('admin.formations.sort', {champ:'title', ordre:'ASC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('admin.formations.sort', {champ:'title', ordre:'DESC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">></a>
+                    <form class="form-inline mt-1" method="POST" action="{{ path('admin.formations.findallcontain', {champ:'title'}) }}">
                         <div class="form-group mr-1 mb-2">
                             <input type="text" class="sm" name="recherche" 
                                    value="{% if valeur|default and not table|default %}{{ valeur }}{% endif %}">
@@ -19,9 +24,9 @@
                 </th>
                 <th class="text-left align-top" scope="col">
                     playlist<br />
-                    <a href="{{ path('formations.sort', {table:'playlist', champ:'name', ordre:'ASC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true"><</a>
-                    <a href="{{ path('formations.sort', {table:'playlist', champ:'name', ordre:'DESC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">></a>
-                    <form class="form-inline mt-1" method="POST" action="{{ path('formations.findallcontain', {champ:'name', table:'playlist'}) }}">
+                    <a href="{{ path('admin.formations.sort', {table:'playlist', champ:'name', ordre:'ASC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('admin.formations.sort', {table:'playlist', champ:'name', ordre:'DESC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">></a>
+                    <form class="form-inline mt-1" method="POST" action="{{ path('admin.formations.findallcontain', {champ:'name', table:'playlist'}) }}">
                         <div class="form-group mr-1 mb-2">
                             <input type="text" class="sm" name="recherche" 
                                    value="{% if valeur|default and table|default and table=='playlist' %}{{ valeur }}{% endif %}">
@@ -32,7 +37,7 @@
                 </th>
                 <th class="text-left align-top" scope="col">
                     catégories
-                    <form class="form-inline mt-1" method="POST" action="{{ path('formations.findallcontain', {champ:'id', table:'categories'}) }}">
+                    <form class="form-inline mt-1" method="POST" action="{{ path('admin.formations.findallcontain', {champ:'id', table:'categories'}) }}">
                         <select class="form-select form-select-sm" name="recherche" id="recherche" onchange="this.form.submit()">
                             <option value=""></option>
                             {% for categorie in categories %}
@@ -48,8 +53,8 @@
                 </th>
                 <th class="text-center align-top" scope="col">
                     date<br />
-                    <a href="{{ path('formations.sort', {champ:'publishedAt', ordre:'ASC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true"><</a>
-                    <a href="{{ path('formations.sort', {champ:'publishedAt', ordre:'DESC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">></a>                    
+                    <a href="{{ path('admin.formations.sort', {champ:'publishedAt', ordre:'ASC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true"><</a>
+                    <a href="{{ path('admin.formations.sort', {champ:'publishedAt', ordre:'DESC'}) }}" class="btn btn-info btn-sm active" role="button" aria-pressed="true">></a>                    
                 </th>
                 <th class="text-center align-top" scope="col">
                     &nbsp;
@@ -76,22 +81,28 @@
                         {{ formation.publishedatstring }}
                     </td>
                     <td class="text-center">
-                        <!-- affichage mp4 -->
+                      {# Si une vidéo uploadée existe #}
                         {% if formation.videoName %}
-                            <a href="{{ path('formations.showone', {id: formation.id}) }}">
-                                <video width="200" muted style="border-radius:6px; cursor:pointer;">
-                                    <source src="{{ asset('video/formation/' ~ formation.videoName) }}" type="video/mp4">
-                                </video>
+                            <a href="{{ path('admin.formations.showone', {id: formation.id}) }}">
+                            <video width="200" controls>
+                            <source src="{{ asset('video/formation/' ~ formation.videoName) }}" type="video/mp4">
+                                Votre navigateur ne peut pas lire cette vidéo.
+                                    </video>
                             </a>
-                                <!-- affichage youtube -->
-                        {% elseif formation.miniature %}
-                            <a href="{{ path('formations.showone', {id:formation.id}) }}">
-                                <img src="{{ formation.miniature }}" alt="formations.showone">
-                            </a>
-                        {% endif %}
+                                  {# Sinon, afficher la miniature YouTube #}
+                                   {% elseif formation.miniature %}
+                                    <a href="{{ path('admin.formations.showone', {id:formation.id}) }}">
+                                    <img src="{{ formation.miniature }}" alt="formations.showone">
+                                      </a>
+                        {% endif %}    
+                    </td>
+                    <td>
+                        <p><a href="{{ path('admin.formation.modifier', {id:formation.id}) }}" class="btn btn-secondary">Modifier</a></p>
+                        <p> <a href="{{ path('admin.formations.suppr', {id:formation.id}) }}" class="btn btn-danger" onclick="return confirm('Etes-vous sûr de vouloir supprimer {{formation.id}} ?')">Supprimer</a></p>
                     </td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
+
 {% endblock %}

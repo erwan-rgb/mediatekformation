@@ -1,13 +1,14 @@
-{% extends "basefront.html.twig" %}
+{% extends "baseadmin.html.twig" %}
 {% block body %}
     <div class="row mt-3">
         <div class="col">
             <!-- emplacement de la vidéo -->
-            {% if formation.videoName %} 
-                <video controls width="560" height="315" style="display:block; margin: 0 auto;">  
-                   <source src="{{ asset('video/formation/' ~ formation.videoName) }}" type="video/mp4">
-                   Votre navigateur ne peut pas lire cette vidéo. 
+            {% if formation.videoName %}
+                <video controls width="560" height="315" style="display:block; margin: 0 auto;">
+                    <source src="{{ asset('video/formation/' ~ formation.videoName) }}" type="video/mp4">
+                    Votre navigateur ne peut pas lire cette vidéo
                 </video>
+                    <!-- Sinon ,afficher la vidéo YouTube -->
             {% elseif formation.videoid %}
                 <div style="width: 560px; height: 315px; float: none; clear: both; margin: 2px auto;">
                   <embed
