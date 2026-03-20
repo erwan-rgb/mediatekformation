@@ -104,7 +104,7 @@ class AdminFormationsController extends AbstractController {
             $this->formationRepository->add($formation);
             return $this->redirectToRoute('admin.formations');
         }
-        return $this->render("admin/admin.formation.modifier.html.twig", [
+        return $this->render("admin/admin.Formation.Modifier.html.twig", [
             'formation' => $formation,
             'formFormation' => $formFormation->createView()
         ]);
@@ -120,7 +120,7 @@ class AdminFormationsController extends AbstractController {
             $this->formationRepository->add($formation);
             return $this->redirectToRoute('admin.formations');
         }
-        return $this->render("admin/admin.formation.ajout.html.twig", [
+        return $this->render("admin/admin.Formation.ajout.html.twig", [
             'formation' => $formation,
             'formFormation' => $formFormation->createView()
         ]);
