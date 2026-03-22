@@ -98,32 +98,32 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 
 ### 2. Cloner le projet 
 
-** git clone https://github.com/ton-depot.git **
-** cd ton-depot **
+**git clone https://github.com/ton-depot.git**
+**cd ton-depot**
 
 ### 3. Installer les dépendances
 
-** composer install **
+**composer install**
 
 ### 4. Configurer l’environnement 
 
 Créer un fichier .env.local :
-** DATABASE_URL="mysql://user:password@127.0.0.1:3306/mediatekformation" **
+**DATABASE_URL="mysql://user:password@127.0.0.1:3306/mediatekformation"**
 
  Ne jamais mettre ce fichier dans Git.
 
  ### 5. Créer la base de données
 
-** php bin/console doctrine:database:create **
-** php bin/console doctrine:migrations:migrate **
+**php bin/console doctrine:database:create**
+**php bin/console doctrine:migrations:migrate**
 
 ### 6. Charger les données de test
 
-** php bin/console doctrine:fixtures:load **
+**php bin/console doctrine:fixtures:load**
 
 ### 7. Lancer le serveur 
 
-** symfony serve **
+**symfony serve**
 
 L’application est accessible sur :
 http://localhost:8000
@@ -132,7 +132,7 @@ http://localhost:8000
 ## Tester l’application en ligne 
 
 L’application est disponible ici : 
-** https://voyageenpoche.alwaysdata.net **
+**https://voyageenpoche.alwaysdata.net**
 
 Fonctionnalités testables :
 
@@ -146,11 +146,11 @@ Les identifiants admin ne sont pas fournis ici (voir fiche séparée).
 
 ## Structure du projet 
 
-/src
-/templates
-/public
-/tests
-/config
+/src <br>
+/templates <br>
+/public <br>
+/tests <br>
+/config <br>
 /docs
 
 
