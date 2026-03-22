@@ -10,7 +10,7 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 
 ### 1. Nettoyage du code avec SonarLint
 
-* Correction des balises HTML (<strong>, <em>, alt, caption>, etc.)
+* Correction des balises HTML (strong, em, alt, caption, etc.)
 * Normalisation des constantes
 * Suppression des duplications de chaînes
 * Fusion de conditions imbriquées
@@ -148,7 +148,6 @@ Le projet se lance directement via Apache.
  L’application Symfony fonctionne maintenant via Apache, comme un site classique.
  
 
-
 ## Tester l’application en ligne 
 
 L’application est disponible ici : 
@@ -162,7 +161,6 @@ Fonctionnalités testables :
 * Documentation technique (/docs)
 
 Les identifiants admin ne sont pas fournis ici (voir fiche séparée).
-
 
 
 ## Structure du projet 
