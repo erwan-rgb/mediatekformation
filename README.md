@@ -105,7 +105,7 @@ Vous pouvez récupérer le projet en téléchargeant l’archive ZIP depuis GitH
 &nbsp;&nbsp;&nbsp; 3. Cliquer sur **Download ZIP** <br>
 &nbsp;&nbsp;&nbsp; 4. Décompresser l’archive <br>
 &nbsp;&nbsp;&nbsp; 5. Placer le dossier du projet dans : <br>
-        &nbsp;&nbsp;&nbsp;&nbsp; C:\wamp64\www\mediatekformation
+        &nbsp;&nbsp;&nbsp;&nbsp; C:\wamp64\www\mediatekformation <br>
 
 ### 3. Installer les dépendances
 
