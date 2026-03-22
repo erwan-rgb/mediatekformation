@@ -99,7 +99,7 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 
 ### 2. Cloner le projet 
 
-**git clone https://github.com/ton-depot.git**
+**git clone https://github.com/ton-depot.git** <br>
 **cd ton-depot**
 
 ### 3. Installer les dépendances
