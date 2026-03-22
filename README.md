@@ -130,18 +130,18 @@ Le projet se lance directement via Apache.
 #### Étapes : 
 
 1. Démarrer WampServer <br>
-  * L’icône doit devenir verte (Apache + MySQL OK)
+    * L’icône doit devenir verte (Apache + MySQL OK)
     
 2. Placer le projet dans : <br>
-  * C:\wamp64\www\mediatekformation
+    * C:\wamp64\www\mediatekformation
 
 3. Vérifier que le dossier contient bien : <br>
-   * /public
-   *  /src
-   * /vendor (créé après composer install)
+    * /public
+    *  /src
+    * /vendor (créé après composer install)
 
 4. Ouvrir l’application dans un navigateur : <br>
-   * http://localhost/mediatekformation/public/
+    * http://localhost/mediatekformation/public/
 
  #### Résultat 
 
