@@ -100,11 +100,11 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 ### 2. Récupérer le projet 
 
 Vous pouvez récupérer le projet en téléchargeant l’archive ZIP depuis GitHub : <br>
-        - Aller sur le dépôt GitHub <br>
-        -  Cliquer sur **Code** <br>
-        - Cliquer sur **Download ZIP** <br>
-        - Décompresser l’archive <br>
-        - Placer le dossier du projet dans : <br> 
+        1. Aller sur le dépôt GitHub 
+        1.  Cliquer sur **Code** 
+        1. Cliquer sur **Download ZIP** 
+        1. Décompresser l’archive 
+        1. Placer le dossier du projet dans : 
              C:\wamp64\www\mediatekformation
 
 ### 3. Installer les dépendances
