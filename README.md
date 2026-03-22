@@ -127,11 +127,8 @@ La base de données peut être créée directement via phpMyAdmin : <br>
    3.  Créer une base de données nommée **mediatekformation**
    4.  Importer le fichier **mediatekformation.sql** situé à la racine du projet
 
-### 6. Charger les données de test
 
-**php bin/console doctrine:fixtures:load**
-
-### 7. Lancer le serveur (WampServer)
+### 6. Lancer le serveur (WampServer)
 
 Si vous utilisez WampServer, il n’est pas nécessaire d’utiliser symfony serve.
 Le projet se lance directement via Apache.
