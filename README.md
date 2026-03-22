@@ -119,9 +119,13 @@ Créer un fichier .env.local :
  Ne jamais mettre ce fichier dans Git.
 
  ### 5. Créer la base de données
+ 
+La base de données peut être créée directement via phpMyAdmin : <br>
 
-**php bin/console doctrine:database:create**
-**php bin/console doctrine:migrations:migrate**
+   1. Ouvrir **phpMyAdmin**
+   2. Se connecter à MySQL
+   3.  Créer une base de données nommée **mediatekformation**
+   4.  Importer le fichier **mediatekformation.sql** situé à la racine du projet
 
 ### 6. Charger les données de test
 
