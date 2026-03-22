@@ -146,6 +146,7 @@ Le projet se lance directement via Apache.
  #### Résultat 
 
  L’application Symfony fonctionne maintenant via Apache, comme un site classique.
+ 
 
 
 ## Tester l’application en ligne 
@@ -161,6 +162,7 @@ Fonctionnalités testables :
 * Documentation technique (/docs)
 
 Les identifiants admin ne sont pas fournis ici (voir fiche séparée).
+
 
 
 ## Structure du projet 
