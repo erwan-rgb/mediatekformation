@@ -95,6 +95,7 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 * Composer
 * MySQL
 * Symfony CLI (optionnel mais recommandé)
+* WampServer
 
 ### 2. Cloner le projet 
 
@@ -121,12 +122,30 @@ Créer un fichier .env.local :
 
 **php bin/console doctrine:fixtures:load**
 
-### 7. Lancer le serveur 
+### 7. Lancer le serveur (WampServer)
 
-**symfony serve**
+Si vous utilisez WampServer, il n’est pas nécessaire d’utiliser symfony serve.
+Le projet se lance directement via Apache.
 
-L’application est accessible sur :
-http://localhost:8000
+#### Étapes : 
+
+1. Démarrer WampServer <br>
+  * L’icône doit devenir verte (Apache + MySQL OK)
+    
+2. Placer le projet dans : <br>
+  * C:\wamp64\www\mediatekformation
+
+3. Vérifier que le dossier contient bien : <br>
+   * /public
+   *  /src
+   * /vendor (créé après composer install)
+
+4. Ouvrir l’application dans un navigateur : <br>
+   * http://localhost/mediatekformation/public/
+
+ #### Résultat 
+
+ L’application Symfony fonctionne maintenant via Apache, comme un site classique.
 
 
 ## Tester l’application en ligne 
