@@ -22,7 +22,8 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 * Nouvelle colonne “Nombre de formations” dans la page playlists
 * Tri croissant/décroissant sur cette colonne
 * Affichage du nombre de formations dans la page détail d’une playlist
-* Ajout d’une méthode dédiée dans le repository (findOrder())
+* Ajout d’une méthode dédiée dans le repository (findOrder()) <br>
+<img width="1704" height="642" alt="Capture d&#39;écran 2026-02-25 184623" src="https://github.com/user-attachments/assets/ee6ee44c-eb19-4376-a8fd-9791b32c0eec" />
 
 ### 3. Back-office : CRUD Formations
 
@@ -30,42 +31,49 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 * Création / modification / suppression d’une formation
 * Upload de vidéos via VichUploader
 * Formulaire Symfony dédié (FormationType)
-* Pages Twig dédiées
+* Pages Twig dédiées <br>
+<img width="1705" height="878" alt="Capture d&#39;écran 2026-03-22 204940" src="https://github.com/user-attachments/assets/bbf14748-d3b8-4106-ba95-8f5fdef666df" />
 
 ### 4. Back-office : CRUD Playlists
 
 * Gestion complète des playlists
 * Création / modification / suppression
 * Formulaire Symfony (PlaylistType)
-* Pages Twig dédiées
+* Pages Twig dédiées <br>
+<img width="1672" height="871" alt="Capture d&#39;écran 2026-03-22 205050" src="https://github.com/user-attachments/assets/72af73cd-ece5-418b-ad6b-597fe512d282" />
 
 ### 5. Back-office : CRUD Catégories
 
 * Ajout / suppression de catégories
-* Vérification métier (suppression impossible si utilisée)
+* Vérification métier (suppression impossible si utilisée) <br>
+<img width="1711" height="895" alt="Capture d&#39;écran 2026-03-22 205228" src="https://github.com/user-attachments/assets/a590a2ca-6f2f-423e-95c6-43c37e0513bb" />
 
 ### 6. Authentification du back-office
 
 * Page de connexion sécurisée
 * Accès réservé au rôle ROLE_ADMIN
-* Déconnexion accessible depuis toutes les pages admin
+* Déconnexion accessible depuis toutes les pages admin <br>
+  <img width="1783" height="352" alt="Capture d&#39;écran 2026-03-22 205333" src="https://github.com/user-attachments/assets/00b1ddd2-1b0f-4718-93e3-01409a6d61cd"/>
 
 ### 7. Mise en place des tests
 
 * Tests unitaires
 * Tests d’intégration
 * Tests fonctionnels
-* Tests navigateurs (Chrome, Edge, Brave)
+* Tests navigateurs (Chrome, Edge, Brave) <br>
+<img width="1419" height="439" alt="Capture d&#39;écran 2026-03-15 161308" src="https://github.com/user-attachments/assets/a5fffd6a-dd92-4221-90cf-3078875284c6" />
 
 ### 8. Documentation technique
 
 * Génération automatique via phpDocumentor
-* Documentation disponible dans /public/docs
+* Documentation disponible dans /public/docs <br>
+<img width="1004" height="897" alt="Capture d&#39;écran 2026-03-16 113730" src="https://github.com/user-attachments/assets/b102d4cc-c5be-4948-8215-647be8318690" />
 
 ### 9. Documentation utilisateur (vidéo) 
 
 * Vidéo de présentation de moins de 5 minutes
-* Navigation, fonctionnalités, back-office, tri, filtres
+* Navigation, fonctionnalités, back-office, tri, filtres <br>
+<img width="1891" height="986" alt="Capture d&#39;écran 2026-03-17 114303" src="https://github.com/user-attachments/assets/403ddd04-68c0-4376-955a-46dfa4d58e8e" />
 
 ### 10. Déploiement du site 
 
@@ -78,15 +86,16 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 
 * Script backup.sh
 * Dump SQL compressé chaque jour à 12h30
-* Restauration possible via SSH
+* Restauration possible via SSH <br>
+<img width="1437" height="363" alt="Capture d&#39;écran 2026-03-19 145807" src="https://github.com/user-attachments/assets/a8468717-136e-403a-981d-05333c24764a" />
 
 ### 12. Déploiement continu 
 
 * Workflow GitHub Actions
 * Déploiement automatique via FTP à chaque push sur main
 * Secret GitHub pour le mot de passe FTP
-* Synchronisation automatique des fichiers
-
+* Synchronisation automatique des fichiers <br>
+<img width="1645" height="775" alt="Capture d&#39;écran 2026-03-19 182817" src="https://github.com/user-attachments/assets/92c5dce8-bf4f-4831-add7-d0b835fd24b7" />
 
 ## Installation en local 
 
