@@ -14,7 +14,8 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 * Normalisation des constantes
 * Suppression des duplications de chaînes
 * Fusion de conditions imbriquées
-* Amélioration générale de la lisibilité du code
+* Amélioration générale de la lisibilité du code <br>
+<img width="1148" height="86" alt="Capture d&#39;écran 2026-02-22 152908" src="https://github.com/user-attachments/assets/d2aa012d-dc2c-4769-abc1-fa8750812b57" />
 
 ### 2. Ajout du nombre de formations par playlist + tri
 
