@@ -97,10 +97,15 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 * Symfony CLI (optionnel mais recommandé)
 * WampServer
 
-### 2. Cloner le projet 
+### 2. Récupérer le projet 
 
-**git clone https://github.com/ton-depot.git** <br>
-**cd ton-depot**
+Vous pouvez récupérer le projet en téléchargeant l’archive ZIP depuis GitHub : <br>
+     1. Aller sur le dépôt GitHub 
+     2.  Cliquer sur **Code** 
+     3. Cliquer sur **Download ZIP**
+     4. Décompresser l’archive
+     5. Placer le dossier du projet dans : <br> 
+        C:\wamp64\www\mediatekformation
 
 ### 3. Installer les dépendances
 
