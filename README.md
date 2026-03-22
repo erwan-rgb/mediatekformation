@@ -80,7 +80,8 @@ Le présent dépôt documente uniquement les fonctionnalités ajoutées, ainsi q
 * Déploiement complet sur AlwaysData
 * Configuration PHP, BDD, migrations
 * Mise à jour des CGU avec l’URL de production
-* Mise en ligne de la documentation technique
+* Mise en ligne de la documentation technique <br>
+<img width="1613" height="455" alt="Capture d&#39;écran 2026-03-22 211522" src="https://github.com/user-attachments/assets/a3f2b97d-d3a5-4bff-8467-555a4e26445f" />
 
 ### 11. Sauvegarde quotidienne automatisée 
 
